@@ -16,7 +16,7 @@ sed -i -e 's|bind 127.0.0.1|# bind 127.0.0.1|' /etc/redis.conf;
 sed -i -e 's|protected-mode yes|protected-mode no|' /etc/redis.conf;
 read -p "enter passwd:" no;
 passwd=$no;
-sed -i -e 's|# requirepass foobared|requirepass ${passwd}|' /etc/redis.conf;
+sed -i -e "s|# requirepass foobared|requirepass ${passwd}|" /etc/redis.conf;
 echo 'Congratulations on personalized configuration!';
 sleep 1;
 
