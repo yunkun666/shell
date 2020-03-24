@@ -22,6 +22,6 @@ sleep 1;
 
 
 
-echo 'start redis......';
+echo 'start redis...';
 service redis restart;
 
