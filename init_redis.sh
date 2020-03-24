@@ -24,4 +24,4 @@ sleep 1;
 
 echo 'start redis...';
 service redis restart;
-echo '2342234......';
+echo '22222';
